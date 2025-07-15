@@ -36,11 +36,11 @@ class Solution:
                     mat[i][j] = 0
 
         if first_row_zero:
-            for j in range(m):
+            for j in range(n):
                 mat[0][j] = 0
 
         if first_col_zero:
-            for i in range(n):
+            for i in range(m):
                 mat [i][0] = 0
             
 
