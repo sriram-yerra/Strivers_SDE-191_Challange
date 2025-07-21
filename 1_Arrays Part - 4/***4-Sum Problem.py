@@ -84,13 +84,14 @@ def fourSum(nums: List[int], target: int) -> List[List[int]]:
                     l -= 1
                 elif total == target:
                     res.append([nums[i], nums[j], nums[k], nums[l]])
-                    k += 1
-                    l -= 1
                 
                     while k < l and nums[k] == nums[k + 1]: # to skip all of the duplicates
                         k += 1
                     while k < l and nums[l] == nums[l - 1]:
                         l -= 1
+
+                    k += 1
+                    l -= 1
 
     return [i for i in res]
 

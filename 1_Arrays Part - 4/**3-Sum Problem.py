@@ -70,13 +70,14 @@ def threeSum(nums: List[int]) -> List[List[int]]:
                 k -= 1
             elif three == 0:
                 res.append([nums[i], nums[j], nums[k]])
-                j += 1
-                k -= 1
             
                 while j < k and nums[j] == nums[j+1]: # to skip all of the duplicates
                     j += 1
                 while j < k and nums[k] == nums[k-1]:
                     k -= 1
+
+                j += 1
+                k -= 1
 
     return res
 
