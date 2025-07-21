@@ -27,7 +27,7 @@ def merge(arr : List[int], low : int, mid : int, high : int) -> int:
             left += 1
         else:
             temp.append(arr[right])
-            cnt += (mid - left + 1)  # counting happens here
+            cnt += (mid - left + 1)  # counting happens here # Imp
             right += 1
 
     while (left <= mid):
@@ -52,8 +52,9 @@ def mergeSort(arr : List[int], low : int, high : int) -> int:
     cnt += mergeSort(arr, low, mid)    # left half
     cnt += mergeSort(arr, mid + 1, high)  # right half
     cnt += merge(arr, low, mid, high)  # merging sorted halves
+    print(arr)
     return cnt
-
+    
 def numberOfInversions(a : List[int], n : int) -> int:
     n = len(a)
     return mergeSort(a, 0, n - 1) # returns the number of pairs
@@ -62,4 +63,4 @@ if __name__ == "__main__":
     a = [5, 4, 3, 2, 1]
     n = 5
     cnt = numberOfInversions(a, n)
-    print("The number of inversions are:", cnt)
+    print(cnt)
