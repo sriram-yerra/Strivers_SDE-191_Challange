@@ -46,6 +46,10 @@ Here it takes the extra space of len "n"
 #     return [list(quad) for quad in result]
 
 '''
+Once listen to Strivers 4-Sum lecture
+'''
+
+'''
 Approach-1: 2-Pointer Approach, with sorting without extra space
 # for this, first sort the array and then follow the procedure
 It reduces the extra hashset and make it constant space
@@ -62,6 +66,7 @@ def fourSum(nums: List[int], target: int) -> List[List[int]]:
         if i > 0 and nums[i] == nums[i - 1]:
             continue
 
+        # below is the actual full code same loop for 3sum
         for j in range(i + 1, n - 2):
             if j > i + 1 and nums[j] == nums[j - 1]:
                 continue
