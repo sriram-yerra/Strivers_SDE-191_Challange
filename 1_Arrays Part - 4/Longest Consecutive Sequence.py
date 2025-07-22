@@ -75,5 +75,5 @@ Sequence Start	Counted Sequence	Length
 # Choose the max len among the lengths each time
 '''
 
-nums = [100,4,200,1,3,2]
+nums = [100,4,200,1,3,2,5]
 print(longestConsecutive(nums))
