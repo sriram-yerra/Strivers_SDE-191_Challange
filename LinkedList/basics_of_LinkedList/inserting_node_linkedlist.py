@@ -48,4 +48,4 @@ head = insert_at_head(head, 1)
 head = insert_at_end(head, 99)
 head = insert_at_pos(head, 2, 1)
 
-printList(head)
+# printList(head)
