@@ -27,7 +27,7 @@ def insert_at_pos(head, data, pos):
     new_node = Node(data)
 
     temp = head
-    i = 0
+    i = 0   
     while temp != None and i < pos-1:
         temp = temp.next
         i += 1
